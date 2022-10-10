@@ -2,7 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Home from './pages/Home'
-import Profile from './pages/Profile'
+import UserProfile from './pages/UserProfile'
+import DoctorProfile from "./pages/DoctorProfile"
 import Admin from './pages/Admin'
 import About from './pages/About'
 import Help from './pages/Help'
@@ -18,7 +19,8 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/' element={<Book />} />
-        <Route path='/profile' element={<Profile />} />
+        <Route path='/profile' element={<UserProfile/>} />
+        <Route path ="/doctorProfile" element={<DoctorProfile />} />
         <Route path='/admin' element={<Admin />} />
         <Route path='/about' element={<About />} />
         <Route path='/help' element={<Help />} />
